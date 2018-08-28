@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 
 function apiRoutes(app) {
     app.get('/api/friends', function(req,res){
-        res.json(friends);
+        return res.json(friends);
     });
 
     app.post('/api/friends', function(req,res){
