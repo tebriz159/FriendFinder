@@ -1,6 +1,6 @@
-/* body {
-    text-align: center;
-}*/
+body {
+    font-family: 'Source Code Pro', 'Menlo', 'Courier', monospace;
+}
 
 .width-auto {
     width: auto;
@@ -8,4 +8,12 @@
 
 #about-you {
     margin-bottom: 15px;
+}
+
+select {
+    text-align-last: center;
+}
+
+h1 {
+    font-weight: bold;
 }
