@@ -1,5 +1,44 @@
 body {
     font-family: 'Source Code Pro', 'Menlo', 'Courier', monospace;
+    background-color: black;
+    color: lime;
+}
+
+a, a:link, a:visited {
+    color: lime;
+}
+
+a:hover, a:active {
+    color: lime;
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.code-comment {
+    color: #999999;
+}
+
+.code-blue {
+    color: cyan;
+}
+
+.code-white {
+    color: white;
+}
+
+.code-magenta {
+    color: magenta;
+}
+
+.code-yellow {
+    color: yellow;
+}
+
+.code-orange {
+    color: orange;
 }
 
 .width-auto {
@@ -12,8 +51,24 @@ body {
 
 select {
     text-align-last: center;
+    margin-top: 10px;
 }
 
 h1 {
     font-weight: bold;
 }
+
+.jumbotron {
+    background-color: black;
+}
+
+.blink_me {
+    animation: blinker 1s step-start infinite;
+    color: lime;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }

@@ -22,145 +22,222 @@
     <div class="container">
 
         <br>
-        <h1>Survey Questions</h1>
-        <hr>
+        <h1 class="code-comment">// Survey Questions</h1>
+        <br>
 
-        <h3 id="about-you"><strong>About You</strong></h3>
+        <h3 id="about-you">function <span class="bold code-blue">About_You </span><span class="code-white">(name, photo)
+            </span> <span class="code-yellow">{</span></h3>
 
         <form>
-            <div class="form-group">
-                <label><h5>Name (Required)</h5></label>
-                <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+            <div class="row">
+                <div class="col-11 offset-1">
+                    <div class="form-group">
+                        <label><h5>var <span class="code-white">Name </span>= <span class="code-comment">// required</span></h5></label>
+                        <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label><h5>Link To Photo (Required)</h5></label>
-                <input type="text" class="form-control" id="photo" placeholder="http://your.photo.com/pic.jpg" required>
-            </div>
-            <hr>
-
-            <div class="form-group">
-                <h4>Question 1</h4>
-                <h6>CSS is easy to learn.</h6>
-                <select class="form-control width-auto" id="q1">
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
+            <div class="row">
+                <div class="col-11 offset-1">
+                    <div class="form-group">
+                        <label><h5>var <span class="code-white">Link_To_Photo </span>= <span class="code-comment">// required</span></h5></label>
+                        <input type="text" class="form-control" id="photo" placeholder="http://your.photo.com/pic.jpg" required>
+                    </div>
+                </div>
             </div>
 
-            <div class="form-group">
-                <h4>Question 2</h4>
-                <h6>JavaScript is easy to learn.</h6>
-                <select class="form-control width-auto" id="q2">
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
+            <h3 class="code-yellow">}</h3>
+            <br>
+
+            <h3>var <span class="code-blue bold">Questions </span>= <span class="code-yellow">{</span></h3>
+            <br>
+
+            <div class="row">
+                <div class="col-11 offset-1">
+                    <div class="form-group">
+                        <h4 class="code-white d-inline">question 1: </h4>
+                        <h5 class="d-inline">"CSS is easy to learn."</h5>
+                        <br>
+                        <select class="form-control width-auto d-inline" id="q1">
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <h4 class="d-inline bold code-yellow">,</h4>
+                    </div>
+                </div>
             </div>
 
-            <div class="form-group">
-                <h4>Question 3</h4>
-                <h6>You would rather be a front end developer over a back end developer.</h6>
-                <select class="form-control width-auto" id="q3">
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
+            <div class="row">
+                <div class="col-11 offset-1">
+                    <div class="form-group">
+                        <h4 class="code-white d-inline">question 2: </h4>
+                        <h5 class="d-inline">"JavaScript is easy to learn."</h5>
+                        <br>
+                        <select class="form-control width-auto d-inline" id="q2">
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <h4 class="d-inline bold code-yellow">,</h4>
+                    </div>
+                </div>
             </div>
 
-            <div class="form-group">
-                <h4>Question 4</h4>
-                <h6>The NPM package "Chalk" is better than "Colors."</h6>
-                <select class="form-control width-auto" id="q4">
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
+            <div class="row">
+                <div class="col-11 offset-1">
+                    <div class="form-group">
+                        <h4 class="code-white d-inline">question 3: </h4>
+                        <h5 class="d-inline">"You would rather be a front end developer over a back end developer."</h5>
+                        <br>
+                        <select class="form-control width-auto d-inline" id="q3">
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <h4 class="d-inline bold code-yellow">,</h4>
+                    </div>
+                </div>
             </div>
 
-            <div class="form-group">
-                <h4>Question 5</h4>
-                <h6>HTML is easy to learn.</h6>
-                <select class="form-control width-auto" id="q5">
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
+            <div class="row">
+                <div class="col-11 offset-1">
+                    <div class="form-group">
+                        <h4 class="code-white d-inline">question 4: </h4>
+                        <h5 class="d-inline">"The NPM package 'Chalk' is better than 'Colors.'"</h5>
+                        <br>
+                        <select class="form-control width-auto d-inline" id="q4">
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <h4 class="d-inline bold code-yellow">,</h4>
+                    </div>
+                </div>
             </div>
 
-            <div class="form-group">
-                <h4>Question 6</h4>
-                <h6>Mac &gt; PC.</h6>
-                <select class="form-control width-auto" id="q6">
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
+
+            <div class="row">
+                <div class="col-11 offset-1">
+                    <div class="form-group">
+                        <h4 class="code-white d-inline">question 5: </h4>
+                        <h5 class="d-inline">"HTML is easy to learn."</h5>
+                        <br>
+                        <select class="form-control width-auto d-inline" id="q5">
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <h4 class="d-inline bold code-yellow">,</h4>
+                    </div>
+                </div>
             </div>
 
-            <div class="form-group">
-                <h4>Question 7</h4>
-                <h6>Bootstrap is better than Materialize.</h6>
-                <select class="form-control width-auto" id="q7">
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
+            <div class="row">
+                <div class="col-11 offset-1">
+                    <div class="form-group">
+                        <h4 class="code-white d-inline">question 6: </h4>
+                        <h5 class="d-inline">"Mac &gt; PC."</h5>
+                        <br>
+                        <select class="form-control width-auto d-inline" id="q6">
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <h4 class="d-inline bold code-yellow">,</h4>
+                    </div>
+                </div>
             </div>
 
-            <div class="form-group">
-                <h4>Question 8</h4>
-                <h6>Sublime Text &gt; VSCode.</h6>
-                <select class="form-control width-auto" id="q8">
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
+            <div class="row">
+                <div class="col-11 offset-1">
+                    <div class="form-group">
+                        <h4 class="code-white d-inline">question 7: </h4>
+                        <h5 class="d-inline">"Bootstrap is better than Materialize."</h5>
+                        <br>
+                        <select class="form-control width-auto d-inline" id="q7">
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <h4 class="d-inline bold code-yellow">,</h4>
+                    </div>
+                </div>
             </div>
 
-            <div class="form-group">
-                <h4>Question 9</h4>
-                <h6>MySQL is easy to learn.</h6>
-                <select class="form-control width-auto" id="q9">
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
+            <div class="row">
+                <div class="col-11 offset-1">
+                    <div class="form-group">
+                        <h4 class="code-white d-inline">question 8: </h4>
+                        <h5 class="d-inline">"VSCode is the best editor."</h5>
+                        <br>
+                        <select class="form-control width-auto d-inline" id="q8">
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <h4 class="d-inline bold code-yellow">,</h4>
+                    </div>
+                </div>
             </div>
 
-            <div class="form-group">
-                <h4>Question 10</h4>
-                <h6>Intenting with two spaces is critical to JS and HTML development.</h6>
-                <select class="form-control width-auto" id="q10">
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
+            <div class="row">
+                <div class="col-11 offset-1">
+                    <div class="form-group">
+                        <h4 class="code-white d-inline">question 9: </h4>
+                        <h5 class="d-inline">"MySQL is easy to learn."</h5>
+                        <br>
+                        <select class="form-control width-auto d-inline" id="q9">
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <h4 class="d-inline bold code-yellow">,</h4>
+                    </div>
+                </div>
             </div>
 
-            <hr>
-            <button id="submit-button" type="submit" class="btn btn-primary">Submit</button>
-            <button id="reset-button" class="btn btn-danger">Reset Form</button>
+            <div class="row">
+                <div class="col-11 offset-1">
+                    <div class="form-group">
+                        <h4 class="code-white d-inline">question 10: </h4>
+                        <h5 class="d-inline">"GIF is pronounced with a 'j' sound (as in 'jiffy')."</h5>
+                        <br>
+                        <select class="form-control width-auto d-inline" id="q10">
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <h4 class="d-inline bold code-yellow">,</h4>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="code-yellow">}</h3>
+
+            <br>
+            <button id="submit-button" type="submit" class="btn btn-primary">Submit()</button>
+            <button id="reset-button" class="btn btn-danger">Reset_Form()</button>
         </form>
 
     </div>
@@ -170,8 +247,10 @@
     <footer>
         <div class="container">
             <p>
+                    <span class="blink_me">&gt; </span>
                 <a href="/api/friends">API Friends List</a> | <a href="https://github.com/adnanyousef/FriendFinder" target="_blank">GitHub
-                    Repo | <a href="/home">Home Page</a>
+                    Repo
+                </a> | <a href="/home">Home Page</a>
                 </a>
             </p>
         </div>
@@ -205,7 +284,7 @@
 
             // Form validation
             if ($('#name').val().trim() == '' || $('#photo').val().trim() == '') {
-                alert('Please fill out all the forms!');
+                alert('Please use a valid Name and Link!');
                 return;
             };
 
