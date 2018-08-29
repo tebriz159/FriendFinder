@@ -25,14 +25,11 @@ function apiRoutes(app) {
                 diff += Math.abs(friends[j].scores[k] - newFriend.scores[k]);
             };
 
-            var scoreDiff = {
-                index: j,
-                diff: diff
-            };
-            scoreDiffs.push(scoreDiff);
+            scoreDiffs.push(diff);
         };
 
-
+        var matchIndex = scoreDiffs.indexOf(Math.min(...scoreDiffs));
+        console.log(matchIndex);
 
 
         // Add new friend to array
